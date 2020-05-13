@@ -11,6 +11,10 @@ class Genre
   end 
   
   def songs 
+      Song.all.select{|songs| songs.genre == self}
+  end 
+  
+  def artists
       
   end 
   
